@@ -1,0 +1,35 @@
+{
+  "caseID": "synthetic-first-error",
+  "synthetic": true,
+  "problem": "2(x + 3) = 14",
+  "learnerWork": "2x + 3 = 14 → 2x = 11 → x = 5.5",
+  "reference": "2x + 6 = 14 → x = 4",
+  "expected": {
+    "firstErrorPhrase": "did not distribute 2 to +3",
+    "visibleEvidenceAnchors": [
+      "2x + 3 = 14",
+      "2x = 11",
+      "x = 5.5"
+    ],
+    "requiredNextRule": "distribute the outside factor to every term inside the parentheses",
+    "forbiddenClaims": [
+      "the division from 2x = 11 to x = 5.5 is incorrect",
+      "11 divided by 2 is not 5.5",
+      "x = 5.5 is an incorrect result for 2x = 11"
+    ]
+  },
+  "evidence": [
+    {
+      "role": "context",
+      "path": "context.svg"
+    },
+    {
+      "role": "learnerWork",
+      "path": "learner-work.svg"
+    },
+    {
+      "role": "reference",
+      "path": "reference.svg"
+    }
+  ]
+}

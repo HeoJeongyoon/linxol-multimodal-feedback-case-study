@@ -1,0 +1,12 @@
+{
+  "name": "linxol-multimodal-feedback-case-study",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test test/offline-demo.test.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
